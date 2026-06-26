@@ -1,0 +1,62 @@
+==========================================================================
+ Houseware Inventory Management System — Requirements
+==========================================================================
+ NOTE: This is a Laravel (PHP) project. PHP dependencies are managed by
+ Composer (composer.json / composer.lock) and JS tooling by npm
+ (package.json). This file is a human-readable summary of everything
+ needed to install and run the project.
+
+ Install PHP packages with:   composer install
+ Install JS packages with:    npm install   (optional — CDN assets used by default)
+--------------------------------------------------------------------------
+
+# --- System / Software Prerequisites -------------------------------------
+PHP >= 8.2
+Composer >= 2.x
+MySQL >= 8.0    (or MariaDB >= 10.4)
+Node.js >= 18   (optional, only for a Vite asset build)
+npm >= 9        (optional)
+XAMPP (recommended on Windows — bundles PHP + MySQL)
+
+# --- Required PHP Extensions ---------------------------------------------
+ext-gd          # barcode / QR image generation
+ext-pdo_mysql   # MySQL database driver
+ext-mbstring
+ext-openssl
+ext-tokenizer
+ext-xml
+ext-ctype
+ext-json
+ext-bcmath
+ext-fileinfo
+ext-curl
+ext-zip
+
+# --- PHP Dependencies (composer require) ---------------------------------
+php:^8.2
+laravel/framework:^11.0
+laravel/tinker:^2.9
+barryvdh/laravel-dompdf:^3.0          # PDF reports / receipts
+maatwebsite/excel:^3.1                # Excel / CSV export
+milon/barcode:^11.0                   # Barcode generation
+simplesoftwareio/simple-qrcode:^4.2   # QR code generation
+spatie/laravel-permission:^6.9        # Roles & permissions
+
+# --- PHP Dev Dependencies (composer require --dev) -----------------------
+fakerphp/faker:^1.23
+laravel/pint:^1.13
+laravel/sail:^1.26
+mockery/mockery:^1.6
+nunomaduro/collision:^8.0
+phpunit/phpunit:^10.5
+spatie/laravel-ignition:^2.4
+
+# --- JavaScript Dev Dependencies (npm install) ---------------------------
+vite:^5.0
+laravel-vite-plugin:^1.0
+axios:^1.6.4
+
+# --- Frontend (loaded via CDN — no build required) -----------------------
+Tailwind CSS
+Alpine.js
+Chart.js
